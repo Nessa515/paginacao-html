@@ -7,7 +7,7 @@ let qtdPaginas = 0;
 let paginaAtual = 0;
 
 async function listarLivros(pagina = 1){
-    await fetch(`${url}/livros?_page=1`)
+    await fetch(`${url}/livros?_page=${pagina}`)
             .then(result => result.json())
             .then(result => {
                 livros = result.data;
@@ -21,13 +21,15 @@ async function listarLivros(pagina = 1){
 function mudarPagina(pagina){
     console.log(`Mudando página ${pagina}`)
     listarLivros(pagina)
+    renderizarTabela()
+    // renderizarPaginacao()
 }
 
 function renderizarPaginacao(){
     if(qtdPaginas > 0){
         let p = "";
         for(let i = 1; i <= qtdPaginas; i++){
-            p += `<div><a href='#' onClick='mudarPagina()'>${i}</a></div>`;
+            p += `<div><a href='#' onClick='mudarPagina(${i})'>${i}</a></div>`;
         }
         paginacao.innerHTML = p;
     }
