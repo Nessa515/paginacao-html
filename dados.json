@@ -179,6 +179,126 @@
             "nome": "O Enigma das Sombras",
             "genero": "Suspense",
             "autor": "Douglas Barros"
+        },
+        {
+            "id": "31",
+            "nome": "O Destino dos Reis",
+            "gênero": "Fantasia",
+            "autor": "César Moraes"
+        },
+        {
+            "id": "32",
+            "nome": "Noite Sem Fim",
+            "gênero": "Terror",
+            "autor": "Alana Ferreira"
+        },
+        {
+            "id": "33",
+            "nome": "Os Ecos do Silêncio",
+            "gênero": "Mistério",
+            "autor": "Cláudia Figueiredo"
+        },
+        {
+            "id": "34",
+            "nome": "Horizontes Perdidos",
+            "gênero": "Ficção Científica",
+            "autor": "Roberto Martins"
+        },
+        {
+            "id": "35",
+            "nome": "A Fuga das Sombras",
+            "gênero": "Suspense",
+            "autor": "Luiza Gomes"
+        },
+        {
+            "id": "36",
+            "nome": "O Olho do Dragão",
+            "gênero": "Fantasia",
+            "autor": "Matheus Vieira"
+        },
+        {
+            "id": "37",
+            "nome": "Nas Garras do Medo",
+            "gênero": "Terror",
+            "autor": "Tatiana Oliveira"
+        },
+        {
+            "id": "38",
+            "nome": "O Último Segredo",
+            "gênero": "Mistério",
+            "autor": "Fernando Nogueira"
+        },
+        {
+            "id": "39",
+            "nome": "Caminho das Estrelas",
+            "gênero": "Ficção Científica",
+            "autor": "Simone Freitas"
+        },
+        {
+            "id": "40",
+            "nome": "A Princesa Guerreira",
+            "gênero": "Fantasia",
+            "autor": "Débora Souza"
+        },
+        {
+            "id": "41",
+            "nome": "Almas Perdidas",
+            "gênero": "Terror",
+            "autor": "Igor Carvalho"
+        },
+        {
+            "id": "42",
+            "nome": "O Enigma da Montanha",
+            "gênero": "Suspense",
+            "autor": "Bruno Pereira"
+        },
+        {
+            "id": "43",
+            "nome": "A Travessia do Deserto",
+            "gênero": "Aventura",
+            "autor": "Camila Ribeiro"
+        },
+        {
+            "id": "44",
+            "nome": "Coração Selvagem",
+            "gênero": "Romance",
+            "autor": "Joana Mendes"
+        },
+        {
+            "id": "45",
+            "nome": "Segredos do Além",
+            "gênero": "Mistério",
+            "autor": "André Luiz"
+        },
+        {
+            "id": "46",
+            "nome": "Entre a Vida e a Morte",
+            "gênero": "Suspense",
+            "autor": "Gabriela Azevedo"
+        },
+        {
+            "id": "47",
+            "nome": "Tempestade de Areia",
+            "gênero": "Aventura",
+            "autor": "Diego Borges"
+        },
+        {
+            "id": "48",
+            "nome": "A Queda do Império",
+            "gênero": "Histórico",
+            "autor": "Bruna Andrade"
+        },
+        {
+            "id": "49",
+            "nome": "Os Filhos do Fogo",
+            "gênero": "Fantasia",
+            "autor": "Leandro Lopes"
+        },
+        {
+            "id": "50",
+            "nome": "Sob o Céu de Outono",
+            "gênero": "Romance",
+            "autor": "Juliana Castro"
         }
     ]
 }

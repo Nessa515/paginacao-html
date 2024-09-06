@@ -27,11 +27,15 @@
     padding: 8px;
 }
 
+.paginacao{
+    display: flex;
+    gap: 1;
+}
+
           
-/* .paginacao {
-    position: absolute;
-    top: 500px;
-    right: 230px;
+.paginacao div{
+    padding: 8px;
+    background-color: azure;
 }
   
 .paginacao a {
@@ -40,7 +44,7 @@
     text-decoration: none;
 }
   
-.pginacao a:hover:not(.active) {
+.paginacao a:hover:not(.active) {
     background-color: #031F3B;
     color: white;
 }
@@ -56,4 +60,4 @@ a:nth-child(1) {
   
 a:nth-child(7) {
     font-weight: bold;
-} */
+}

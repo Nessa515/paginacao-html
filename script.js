@@ -1,18 +1,37 @@
 const url = "http://localhost:3000";
 const tabela = document.querySelector("#tabela");
+const paginacao = document.querySelector("#paginacao")
 
 let livros = []
+let qtdPaginas = 0;
+let paginaAtual = 0;
 
-async function listarLivros(){
-    await fetch(`${url}/livros`)
-    // Tranformando o response.body em um JSON
-    .then(response => {return response.json() })
-    // Colocando o response na variável livros
-    .then(response => livros = response)
-    // Caso haja algum problema um catch será lançado
-    .catch(error => console.log(error))
+async function listarLivros(pagina = 1){
+    await fetch(`${url}/livros?_page=1`)
+            .then(result => result.json())
+            .then(result => {
+                livros = result.data;
+                qtdPaginas = result.pages;
+                result.next == null ? paginaAtual = result.prev + 1 : 
+                result.next - 1;
+            })
+            .catch(error => console.log(error))
 }
 
+function mudarPagina(pagina){
+    console.log(`Mudando página ${pagina}`)
+    listarLivros(pagina)
+}
+
+function renderizarPaginacao(){
+    if(qtdPaginas > 0){
+        let p = "";
+        for(let i = 1; i <= qtdPaginas; i++){
+            p += `<div><a href='#' onClick='mudarPagina()'>${i}</a></div>`;
+        }
+        paginacao.innerHTML = p;
+    }
+}
 
 function renderizarTabela(){
     tabela.innerHTML = `
@@ -39,6 +58,7 @@ function renderizarTabela(){
 
 async function run(){
     await listarLivros()
+    renderizarPaginacao()
     renderizarTabela()
 }
 
