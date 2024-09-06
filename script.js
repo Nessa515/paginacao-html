@@ -22,7 +22,7 @@ function mudarPagina(pagina){
     console.log(`Mudando página ${pagina}`)
     listarLivros(pagina)
     renderizarTabela()
-    // renderizarPaginacao()
+    renderizarPaginacao()
 }
 
 function renderizarPaginacao(){
