@@ -6,6 +6,10 @@ let livros = []
 let qtdPaginas = 0;
 let paginaAtual = 0;
 
+async function cadastrarLivros() {
+    await fetch(`${url}/livros`)
+}
+
 async function listarLivros(pagina = 1){
     await fetch(`${url}/livros?_page=${pagina}`)
             .then(result => result.json())
@@ -18,9 +22,9 @@ async function listarLivros(pagina = 1){
             .catch(error => console.log(error))
 }
 
-function mudarPagina(pagina){
+async function mudarPagina(pagina){
     console.log(`Mudando página ${pagina}`)
-    listarLivros(pagina)
+    await listarLivros(pagina)
     renderizarTabela()
     renderizarPaginacao()
 }
